@@ -15,6 +15,13 @@ android {
         versionCode = 1
         versionName = "1.0"
     }
+
+    sourceSets {
+        getByName("main") {
+            manifest.srcFile("app/src/main/AndroidManifest.xml")
+            java.srcDirs("app/src/main/java")
+        }
+    }
 }
 
 dependencies {
